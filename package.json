@@ -1,0 +1,8 @@
+{
+  "name": "space-euphoria-manual",
+  "private": true,
+  "version": "4.0.0",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0"
+  }
+}
