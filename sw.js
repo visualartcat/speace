@@ -1,4 +1,4 @@
-const CACHE = 'euphoria-manual-v5';
+const CACHE = 'euphoria-manual-v6';
 const CORE = ['/', '/index.html', '/manifest.webmanifest', '/assets/icon-192.png', '/assets/icon-512.png'];
 
 self.addEventListener('install', event => {
