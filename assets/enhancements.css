@@ -11,4 +11,32 @@
 .liquor-guide section{padding:17px;border:1px solid var(--line);border-radius:12px;background:#f8f9fb}
 .liquor-guide h3{margin:0 0 10px}
 .liquor-guide .bullets{font-size:12px}
-@media(max-width:760px){.quick-grid.euphoria-four-links,.liquor-guide{grid-template-columns:1fr}.drink-cup-reference img{width:56px;height:56px}}
+.dining-course-list{display:grid;gap:20px}
+.dining-course{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.dining-course>header{display:flex;align-items:center;gap:16px;padding:0 0 17px;border-bottom:1px solid var(--line)}
+.dining-course>header>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;font-family:Georgia,serif;font-size:16px}
+.dining-course>header small{display:block;font-size:8px;letter-spacing:1.8px;color:var(--muted)}
+.dining-course>header h2{margin:1px 0 0;font-family:Georgia,serif;font-size:22px;font-weight:400;letter-spacing:.5px}
+.dining-items{display:grid;grid-template-columns:1fr 1fr;gap:13px;padding-top:17px}
+.dining-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.dining-item summary{display:flex;align-items:center;gap:14px;min-height:112px;padding:10px;cursor:pointer;list-style:none}
+.dining-item summary::-webkit-details-marker{display:none}
+.dining-thumb,.dining-no-photo{width:92px;height:92px;flex:0 0 92px;border-radius:10px;background:#f0f1ed}
+.dining-thumb{object-fit:contain}
+.dining-no-photo{display:grid;place-items:center;text-align:center;color:#8a9187;font-size:10px;line-height:1.45;border:1px dashed #cfd5ca}
+.dining-title{display:grid;gap:5px;min-width:0;flex:1}
+.dining-title strong{font-size:14px;line-height:1.45}
+.dining-title small{font-size:10px;color:var(--muted)}
+.dining-chevron{font-size:20px;color:#7c8e73;padding:0 7px}
+.dining-item[open] .dining-chevron{font-size:0}
+.dining-item[open] .dining-chevron:after{content:'−';font-size:20px}
+.dining-detail{padding:0 16px 18px;border-top:1px solid #edf0e8}
+.dining-photo-actions{margin:14px 0 10px}
+.dining-figure{margin:16px 0}
+.dining-figure img{display:block;width:100%;max-height:430px;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:12px}
+.dining-figure figcaption{margin-top:7px;font-size:9px;color:var(--muted)}
+.dining-description{padding:3px 2px 0}
+.dining-description p{font-size:12px;line-height:1.85;margin:9px 0;color:#56645b}
+.dining-description p:nth-child(2):not(:last-child){font-weight:700;color:#7a6a4d}
+.dining-empty-photo{margin:16px 0}
+@media(max-width:760px){.quick-grid.euphoria-four-links,.liquor-guide{grid-template-columns:1fr}.drink-cup-reference img{width:56px;height:56px}.dining-course{padding:18px}.dining-items{grid-template-columns:1fr}.dining-item summary{min-height:98px}.dining-thumb,.dining-no-photo{width:78px;height:78px;flex-basis:78px}.dining-title strong{font-size:13px}.dining-course>header h2{font-size:20px}}
