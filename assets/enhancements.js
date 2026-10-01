@@ -186,7 +186,7 @@
       delete main.dataset.euphoriaDining;
       return false;
     }
-    if (main.dataset.euphoriaDining === '1') return true;
+    if (main.dataset.euphoriaDining === '1' && main.querySelector('.dining-course-list')) return true;
     main.dataset.euphoriaDining = '1';
     const photos = storedRecipePhotos();
     document.title = '다이닝 코스 · SPACE EUPHORIA';
