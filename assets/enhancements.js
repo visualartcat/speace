@@ -122,17 +122,86 @@
     }
   };
 
+  const diningEditKey = id => `dining:${id}`;
+  const canEditDining = () => {
+    try {
+      return Boolean(editMode && isAdmin());
+    } catch {
+      return false;
+    }
+  };
+  const diningEdit = item => {
+    try {
+      return edits[diningEditKey(item.id)] || null;
+    } catch {
+      return null;
+    }
+  };
+  const defaultDiningDescription = item => item.description.map(text => `<p>${text}</p>`).join('');
+  const diningDescription = item => {
+    const html = diningEdit(item)?.html || defaultDiningDescription(item);
+    try {
+      return sanitizeHtml(html);
+    } catch {
+      return html;
+    }
+  };
+
   const diningItem = (item, photos) => {
     const custom = photos[item.id];
     const src = custom || item.image;
-    const resetLabel = item.image ? '기본 사진 복원' : '사진 삭제';
+    const editorActions = canEditDining()
+      ? `<div class="recipe-actions dining-photo-actions"><button type="button" class="recipe-edit dining-edit-description" data-edit-dining="${item.id}">설명 수정</button><label class="recipe-photo-button">사진 변경<input type="file" accept="image/*" data-photo-section="${item.id}"></label>${custom ? `<button type="button" class="recipe-photo-reset" data-reset-photo="${item.id}">${item.image ? '기본 사진 복원' : '사진 삭제'}</button>` : ''}</div>`
+      : '';
     const thumb = src
       ? `<img class="dining-thumb" src="${src}" alt="${item.name} 메뉴 사진" width="220" height="220" decoding="async" loading="lazy">`
       : '<span class="dining-no-photo">사진<br>추가 가능</span>';
     const photo = src
       ? `<figure class="dining-figure"><img src="${src}" alt="${item.name} 메뉴 사진" decoding="async" loading="lazy"><figcaption>${custom ? '직접 변경한 사진' : '다이닝 코스 메뉴 사진'}</figcaption></figure>`
       : '<div class="recipe-empty-photo dining-empty-photo">등록된 사진이 없습니다. 편집 모드에서 ‘사진 변경’으로 추가하세요.</div>';
-    return `<details id="${item.id}" class="dining-item"><summary>${thumb}<span class="dining-title"><strong>${item.name}</strong><small>눌러서 설명 보기</small></span><span class="dining-chevron">+</span></summary><div class="dining-detail"><div class="recipe-actions dining-photo-actions"><label class="recipe-photo-button">사진 변경<input type="file" accept="image/*" data-photo-section="${item.id}"></label>${custom ? `<button class="recipe-photo-reset" data-reset-photo="${item.id}">${resetLabel}</button>` : ''}</div>${photo}<div class="dining-description">${item.description.map(text => `<p>${text}</p>`).join('')}</div></div></details>`;
+    return `<details id="${item.id}" class="dining-item"><summary>${thumb}<span class="dining-title"><strong>${item.name}</strong><small>눌러서 설명 보기</small></span><span class="dining-chevron">+</span></summary><div class="dining-detail">${editorActions}${photo}<div class="dining-description">${diningDescription(item)}</div></div></details>`;
+  };
+
+  const findDiningItem = id => diningCourses.flatMap(course => course.items).find(item => item.id === id);
+
+  const openDiningEditor = id => {
+    const item = findDiningItem(id);
+    if (!item || !canEditDining()) return;
+    const dialog = document.getElementById('edit-dialog');
+    const titleInput = document.getElementById('edit-card-title');
+    const body = document.getElementById('edit-card-body');
+    if (!dialog || !titleInput || !body) return;
+
+    editingKey = diningEditKey(item.id);
+    editingLockedHtml = '';
+    titleInput.value = item.name;
+    titleInput.readOnly = true;
+    titleInput.closest('.editor-label')?.setAttribute('hidden', '');
+    body.innerHTML = diningEdit(item)?.html || defaultDiningDescription(item);
+    document.getElementById('edit-title').textContent = `설명 수정 · ${item.name}`;
+    const help = body.closest('.editor-label')?.querySelector('.editor-help');
+    if (help) help.textContent = '직원이 볼 메뉴 설명을 직접 수정하세요. 문단과 줄바꿈도 저장됩니다.';
+    dialog.classList.add('dining-editor');
+    dialog.showModal();
+    body.focus();
+  };
+
+  const installDiningEditor = () => {
+    const dialog = document.getElementById('edit-dialog');
+    if (!dialog || dialog.dataset.diningEditorInstalled) return;
+    dialog.dataset.diningEditorInstalled = '1';
+    dialog.addEventListener('close', () => {
+      dialog.classList.remove('dining-editor');
+      const titleInput = document.getElementById('edit-card-title');
+      titleInput.readOnly = false;
+      titleInput.closest('.editor-label')?.removeAttribute('hidden');
+      const help = document.getElementById('edit-card-body')?.closest('.editor-label')?.querySelector('.editor-help');
+      if (help) help.textContent = '화면에서 보이는 문장을 직접 수정하세요. 번호 목록에서 Enter를 누르면 다음 번호가 추가됩니다.';
+    });
+    document.addEventListener('click', event => {
+      const button = event.target.closest('[data-edit-dining]');
+      if (button) openDiningEditor(button.dataset.editDining);
+    });
   };
 
   const addDiningNavigation = () => {
@@ -290,6 +359,7 @@
   };
 
   const enhance = () => {
+    installDiningEditor();
     addDiningNavigation();
     addDiningHomeCard();
     if (renderDiningPage()) return;

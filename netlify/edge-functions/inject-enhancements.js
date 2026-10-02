@@ -3,13 +3,13 @@ export default async function injectEnhancements(_request, context) {
   const contentType = response.headers.get('content-type') || '';
   if (!contentType.includes('text/html')) return response;
 
-  const marker = 'data-euphoria-enhancements="20261001-2"';
+  const marker = 'data-euphoria-enhancements="20261002-1"';
   let html = await response.text();
   if (html.includes(marker)) return new Response(html, response);
 
   html = html
-    .replace('</head>', `<link rel="stylesheet" href="/assets/enhancements.css?v=20261001-2" ${marker}></head>`)
-    .replace('</body>', `<script src="/assets/enhancements.js?v=20261001-2" defer ${marker}></script></body>`);
+    .replace('</head>', `<link rel="stylesheet" href="/assets/enhancements.css?v=20261002-1" ${marker}></head>`)
+    .replace('</body>', `<script src="/assets/enhancements.js?v=20261002-1" defer ${marker}></script></body>`);
 
   const headers = new Headers(response.headers);
   headers.delete('content-length');
