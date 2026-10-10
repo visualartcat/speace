@@ -6,7 +6,7 @@
     espresso: ['/assets/cup-espresso.webp', '에스프레소 잔'],
     latteHot: ['/assets/cup-latte-hot.webp', '카페라떼 HOT 잔'],
     ice: ['/assets/glass-ice-drinks.webp', '아이스 아메리카노 크리스탈 잔'],
-    iceTall: ['/assets/glass-tall-ice-drinks.webp', '아이스 라떼·콜드브루·티 롱 글라스']
+    iceTall: ['/assets/glass-tall-ice-drinks.webp?v=20261010-2', '아이스 라떼·콜드브루·티 롱 글라스']
   };
 
   const cupMap = {
