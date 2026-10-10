@@ -35,6 +35,16 @@
 .dining-figure{margin:16px 0}
 .dining-figure img{display:block;width:100%;max-height:430px;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:12px}
 .dining-figure figcaption{margin-top:7px;font-size:9px;color:var(--muted)}
+.dining-carousel{margin:16px 0}
+.dining-carousel-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;scrollbar-width:none;border-radius:12px}
+.dining-carousel-track::-webkit-scrollbar{display:none}
+.dining-carousel .dining-figure{flex:0 0 100%;margin:0;scroll-snap-align:start;scroll-snap-stop:always}
+.dining-carousel .dining-slide-guide img{max-height:none;aspect-ratio:auto}
+.dining-carousel-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:9px}
+.dining-carousel-controls button{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--green);font-size:20px;line-height:1;cursor:pointer}
+.dining-carousel-controls button:disabled{color:#b8beb5;background:#f3f4f1;cursor:default}
+.dining-carousel-controls span{min-width:42px;text-align:center;font-size:10px;color:var(--muted)}
+.dining-swipe-hint{margin:5px 0 0;text-align:center;font-size:9px;color:var(--muted)}
 .dining-description{padding:3px 2px 0;font-size:12px;line-height:1.85;color:#56645b}
 .dining-description p,.dining-description>div{font-size:inherit;line-height:inherit;margin:9px 0;color:inherit}
 .dining-description p:nth-child(2):not(:last-child){font-weight:700;color:#7a6a4d}

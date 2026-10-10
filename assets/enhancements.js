@@ -5,16 +5,18 @@
     americanoHot: ['/assets/cup-americano-hot.webp', '아메리카노 HOT 잔'],
     espresso: ['/assets/cup-espresso.webp', '에스프레소 잔'],
     latteHot: ['/assets/cup-latte-hot.webp', '카페라떼 HOT 잔'],
-    ice: ['/assets/glass-ice-drinks.webp', '아이스 음료 크리스탈 잔']
+    ice: ['/assets/glass-ice-drinks.webp', '아이스 아메리카노 크리스탈 잔'],
+    iceTall: ['/assets/glass-tall-ice-drinks.webp', '아이스 라떼·콜드브루·티 롱 글라스']
   };
 
   const cupMap = {
     'recipe-americano|HOT': cupAssets.americanoHot,
     'recipe-americano|ICE': cupAssets.ice,
     'recipe-latte|HOT': cupAssets.latteHot,
-    'recipe-latte|ICE': cupAssets.ice,
-    'recipe-vanilla|ICE': cupAssets.ice,
-    'recipe-grapefruit|ICE': cupAssets.ice
+    'recipe-latte|ICE': cupAssets.iceTall,
+    'recipe-coldbrew|ICE': cupAssets.iceTall,
+    'recipe-vanilla|ICE': cupAssets.iceTall,
+    'recipe-grapefruit|ICE': cupAssets.iceTall
   };
 
   const diningCourses = [
@@ -26,12 +28,14 @@
           id: 'dining-sweet-shrimp',
           name: 'SWEET SHRIMP',
           image: '/assets/dining/01-amuse.webp',
+          guideImage: '/assets/dining/guides/01-sweet-shrimp-ingredients.webp',
           description: ['단새우와 캐비어, 우니를 샤도네이 크림 폼과 함께 구성했구요. 시트러스 드레싱과 허브로 마무리했습니다. 드실 때 폼과 단새우, 캐비어 또는 우니를 같이 드셔보시는 걸 추천드리겠습니다.']
         },
         {
           id: 'dining-tart-selection',
           name: 'TART SELECTION',
           image: '/assets/dining/02-tart-selection.webp',
+          guideImage: '/assets/dining/guides/02-tart-selection-ingredients.webp',
           description: ['두 가지 타르트 준비해드렸구요. 한쪽은 한우 투뿔 홍두깨살로 만든 타르트 위에 배로 만든 젤과 마늘고추장 아이올리를 구성했고, 다른 한쪽은 버섯 뒤셀에 송고버섯, 트러플을 더했습니다. 먼저 비프 타르트부터 드셔보시고 머쉬룸 타르트 드셔보시는 걸 추천드리겠습니다.']
         }
       ]
@@ -66,6 +70,7 @@
           id: 'dining-uni-fresh-pasta',
           name: 'UNI FRESH PASTA',
           image: '/assets/dining/05-uni-fresh-pasta.webp',
+          guideImage: '/assets/dining/guides/05-uni-fresh-pasta-ingredients.webp',
           description: ['알라치타라 생면에 우니 소스를 입혀 준비했구요. 위에는 생우니와 시오콘부, 블랙올리브, 브레드크럼, 차이브를 올려 마무리했습니다. 오늘 들어온 최상급 보스톤우니(계속 변동) 올려드렸으니 생으로 먼저 드시고 파스타는 한번 섞어 드시는 걸 추천드릴게요.']
         }
       ]
@@ -78,6 +83,7 @@
           id: 'dining-signature-beef-steak',
           name: 'SIGNATURE BEEF STEAK',
           image: '/assets/dining/06-signature-beef-steak.webp',
+          guideImage: '/assets/dining/guides/06-signature-beef-steak-ingredients.webp',
           description: ['한우 1++ 채끝 준비해드리겠습니다. 버터넛 퓨레와 주를 함께 구성했구요. 안에는 뒤셀을 채운 모렐과 샬롯 피클을 곁들였습니다. 고기와 버터넛 퓨레, 주를 같이 드셔보시고 모렐도 함께 곁들여 드셔보시면 좋습니다.']
         }
       ]
@@ -90,18 +96,21 @@
           id: 'dining-chocolate-terrine',
           name: 'CHOCOLATE TERRINE',
           image: '/assets/dining/07-chocolate-terrine.webp',
+          guideImage: '/assets/dining/guides/07-chocolate-terrine-ingredients.webp',
           description: ['다크초콜릿으로 만든 테린에 럼 아이스크림과 라즈베리 잼을 함께 구성했구요. 카카오닙과 말돈으로 마무리했습니다. 초콜릿 테린과 럼 아이스크림을 같이 드셔보시는 걸 추천드리겠습니다.']
         },
         {
           id: 'dining-ile-flottante',
           name: 'ÎLE FLOTTANTE',
-          image: '',
+          image: '/assets/dining/09-ile-flottante.webp',
+          guideImage: '/assets/dining/guides/09-ile-flottante-ingredients.webp',
           description: ['바닐라 앙글레즈 위에 폭신하게 구운 머랭을 올리고, 얇은 캐러멜과 견과류 프랄린, 허브로 함께 마무리했습니다. 앙글레즈와 머랭, 캐러멜을 같이 드셔보시면 좋습니다.']
         },
         {
           id: 'dining-euphoria-caviar-service',
           name: 'EUPHORIA CAVIAR SERVICE',
           image: '/assets/dining/08-euphoria-caviar-service.webp',
+          guideImage: '/assets/dining/guides/08-euphoria-caviar-service-ingredients.webp',
           description: [
             '캐비어 서비스 준비해드리겠습니다. (뚜껑 오픈)',
             '오늘 준비해드린 캐비어는 프랑스산 오세트라 프레스티지 캐비어입니다. 은은한 바다의 향과 섬세한 헤이즐넛 풍미의 긴 여운을 느끼실 수 있고, 아름다운 호박색 골드 색을 띄고 있는 게 특징입니다.',
@@ -147,6 +156,45 @@
     }
   };
 
+  const diningMedia = (item, src, custom) => {
+    const slides = [];
+    if (src) {
+      slides.push({
+        src,
+        alt: `${item.name} 완성 메뉴 사진`,
+        caption: custom ? '직접 변경한 완성 메뉴 사진' : '완성 메뉴'
+      });
+    }
+    if (item.guideImage) {
+      slides.push({
+        src: item.guideImage,
+        alt: `${item.name} 재료 구성 학습 이미지`,
+        caption: '재료 구성 · 좌우로 넘겨 확인'
+      });
+    }
+    if (!slides.length) {
+      return '<div class="recipe-empty-photo dining-empty-photo">등록된 사진이 없습니다. 편집 모드에서 ‘사진 변경’으로 추가하세요.</div>';
+    }
+
+    const figures = slides.map((slide, index) => `<figure class="dining-figure dining-slide${index ? ' dining-slide-guide' : ''}" data-dining-slide-index="${index}"><img src="${slide.src}" alt="${slide.alt}" decoding="async" loading="lazy"><figcaption>${slide.caption}</figcaption></figure>`).join('');
+    if (slides.length === 1) return figures;
+
+    return `<div class="dining-carousel" data-dining-carousel><div class="dining-carousel-track" tabindex="0" aria-label="${item.name} 사진 슬라이드">${figures}</div><div class="dining-carousel-controls"><button type="button" data-dining-slide="-1" aria-label="이전 사진" disabled>‹</button><span aria-live="polite"><b data-dining-current>1</b> / ${slides.length}</span><button type="button" data-dining-slide="1" aria-label="다음 사진">›</button></div><p class="dining-swipe-hint">사진을 좌우로 넘기면 재료 구성을 볼 수 있어요.</p></div>`;
+  };
+
+  const syncDiningCarousel = track => {
+    const carousel = track.closest('[data-dining-carousel]');
+    if (!carousel) return;
+    const total = track.children.length;
+    const index = Math.max(0, Math.min(total - 1, Math.round(track.scrollLeft / Math.max(track.clientWidth, 1))));
+    const current = carousel.querySelector('[data-dining-current]');
+    if (current) current.textContent = String(index + 1);
+    const previous = carousel.querySelector('[data-dining-slide="-1"]');
+    const next = carousel.querySelector('[data-dining-slide="1"]');
+    if (previous) previous.disabled = index === 0;
+    if (next) next.disabled = index === total - 1;
+  };
+
   const diningItem = (item, photos) => {
     const custom = photos[item.id];
     const src = custom || item.image;
@@ -156,9 +204,7 @@
     const thumb = src
       ? `<img class="dining-thumb" src="${src}" alt="${item.name} 메뉴 사진" width="220" height="220" decoding="async" loading="lazy">`
       : '<span class="dining-no-photo">사진<br>추가 가능</span>';
-    const photo = src
-      ? `<figure class="dining-figure"><img src="${src}" alt="${item.name} 메뉴 사진" decoding="async" loading="lazy"><figcaption>${custom ? '직접 변경한 사진' : '다이닝 코스 메뉴 사진'}</figcaption></figure>`
-      : '<div class="recipe-empty-photo dining-empty-photo">등록된 사진이 없습니다. 편집 모드에서 ‘사진 변경’으로 추가하세요.</div>';
+    const photo = diningMedia(item, src, custom);
     return `<details id="${item.id}" class="dining-item"><summary>${thumb}<span class="dining-title"><strong>${item.name}</strong><small>눌러서 설명 보기</small></span><span class="dining-chevron">+</span></summary><div class="dining-detail">${editorActions}${photo}<div class="dining-description">${diningDescription(item)}</div></div></details>`;
   };
 
@@ -201,7 +247,23 @@
     document.addEventListener('click', event => {
       const button = event.target.closest('[data-edit-dining]');
       if (button) openDiningEditor(button.dataset.editDining);
+
+      const sliderButton = event.target.closest('[data-dining-slide]');
+      if (!sliderButton) return;
+      const carousel = sliderButton.closest('[data-dining-carousel]');
+      const track = carousel?.querySelector('.dining-carousel-track');
+      if (!track) return;
+      const direction = Number(sliderButton.dataset.diningSlide);
+      const total = track.children.length;
+      const current = Math.round(track.scrollLeft / Math.max(track.clientWidth, 1));
+      const target = Math.max(0, Math.min(total - 1, current + direction));
+      track.scrollTo({ left: target * track.clientWidth, behavior: 'smooth' });
+      window.setTimeout(() => syncDiningCarousel(track), 350);
     });
+    document.addEventListener('scroll', event => {
+      const track = event.target;
+      if (track instanceof Element && track.matches('.dining-carousel-track')) syncDiningCarousel(track);
+    }, true);
   };
 
   const addDiningNavigation = () => {
@@ -324,12 +386,13 @@
       ['에스프레소', cupAssets.espresso],
       ['카페라떼 HOT', cupAssets.latteHot],
       ['아메리카노 ICE', cupAssets.ice],
-      ['카페라떼 ICE', cupAssets.ice],
-      ['바닐라라떼 ICE', cupAssets.ice],
-      ['허니자몽블랙티 ICE', cupAssets.ice]
+      ['카페라떼 ICE', cupAssets.iceTall],
+      ['콜드브루 ICE', cupAssets.iceTall],
+      ['바닐라라떼 ICE', cupAssets.iceTall],
+      ['허니자몽블랙티 ICE', cupAssets.iceTall]
     ].map(([name, cup]) => `<tr><td>${name}</td><td>${glassCell(cup)}</td></tr>`).join('');
     const note = card.querySelector('.note');
-    if (note) note.textContent = '콜드브루와 HOT 바닐라라떼·HOT 허니자몽블랙티의 잔은 현장 확인 후 추가합니다.';
+    if (note) note.textContent = '콜드브루 HOT와 HOT 바닐라라떼·HOT 허니자몽블랙티의 잔은 현장 확인 후 추가합니다.';
   };
 
   const installNumberedEditor = () => {
