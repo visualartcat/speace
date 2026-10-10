@@ -54,6 +54,7 @@
           id: 'dining-pate-en-croute',
           name: 'PÂTÉ EN CROÛTE, TRUFFLE',
           image: '/assets/dining/04-pate-en-croute.webp',
+          guideImage: '/assets/dining/guides/04-pate-en-croute-ingredients.webp',
           description: [
             '오리와 돼지고기, 닭간을 베이스로 피스타치오와 무화과를 넣어 만든 파테를 퍼프 페이스트리로 감싸 구웠구요. 트러플 비네그렛을 함께 구성했습니다.',
             '(트러플 갈아주며)',
