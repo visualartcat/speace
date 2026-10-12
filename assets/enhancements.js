@@ -29,14 +29,14 @@
           name: 'SWEET SHRIMP',
           image: '/assets/dining/01-amuse.webp',
           guideImage: '/assets/dining/guides/01-sweet-shrimp-ingredients.webp',
-          description: ['단새우와 캐비어, 우니를 샤도네이 크림 폼과 함께 구성했구요. 시트러스 드레싱과 허브로 마무리했습니다. 드실 때 폼과 단새우, 캐비어 또는 우니를 같이 드셔보시는 걸 추천드리겠습니다.']
+          description: ['단새우와 캐비어, 우니를 샤도네이 크림 폼과 함께 구성했구요. 시트러스 드레싱과 허브로 마무리했습니다. 드실 때 폼과 단새우, 캐비어 또는 우니를 한입에 드셔보시는 걸 추천드리겠습니다.']
         },
         {
           id: 'dining-tart-selection',
           name: 'TART SELECTION',
           image: '/assets/dining/02-tart-selection.webp',
           guideImage: '/assets/dining/guides/02-tart-selection-ingredients.webp',
-          description: ['두 가지 타르트 준비해드렸구요. 한쪽은 한우 투뿔 홍두깨살로 만든 타르트 위에 배로 만든 젤과 마늘고추장 아이올리를 구성했고, 다른 한쪽은 버섯 뒤셀에 송고버섯, 트러플을 더했습니다. 먼저 비프 타르트부터 드셔보시고 머쉬룸 타르트 드셔보시는 걸 추천드리겠습니다.']
+          description: ['두 가지 타르트 준비해드렸구요. 한쪽은 한우 투쁠 홍두깨살로 만든 타르트 위에 배로 만든 겔과 마늘고추장 아이올리를 구성했고, 다른 한쪽은 버섯 뒥셀에 송고버섯, 트러플을 더했습니다. 먼저 비프 타르트부터 드셔보시고 머쉬룸 타르트 드셔보시는 걸 추천드리겠습니다.']
         }
       ]
     },
@@ -72,7 +72,13 @@
           name: 'UNI FRESH PASTA',
           image: '/assets/dining/05-uni-fresh-pasta.webp',
           guideImage: '/assets/dining/guides/05-uni-fresh-pasta-ingredients.webp',
-          description: ['알라치타라 생면에 우니 소스를 입혀 준비했구요. 위에는 생우니와 시오콘부, 블랙올리브, 브레드크럼, 차이브를 올려 마무리했습니다. 오늘 들어온 최상급 보스톤우니(계속 변동) 올려드렸으니 생으로 먼저 드시고 파스타는 한번 섞어 드시는 걸 추천드릴게요.']
+          description: ['알라치타라 생면에 우니 소스를 입혀 준비했구요. 위에는 생우니와 블랙올리브, 브레드크럼, 차이브를 올려 마무리했습니다. 오늘 들어온 최상급 보스턴우니(계속 변동) 올려드렸으니 생으로 먼저 드시고 파스타는 한번 섞어 드시는 걸 추천드릴게요.']
+        },
+        {
+          id: 'dining-funghi-cream-pasta',
+          name: 'FUNGHI CREAM PASTA',
+          image: '/assets/dining/10-funghi-cream-pasta.webp',
+          description: ['풍기 크림 파스타 준비해드릴게요. 생면에 버섯과 뒥셀로 깊은 풍미를 내고, 파르미지아노와 트러플로 마무리했습니다. 드시기 전에 트러플의 향을 먼저 느껴보셔도 좋습니다.']
         }
       ]
     },
@@ -85,7 +91,7 @@
           name: 'SIGNATURE BEEF STEAK',
           image: '/assets/dining/06-signature-beef-steak.webp',
           guideImage: '/assets/dining/guides/06-signature-beef-steak-ingredients.webp',
-          description: ['한우 1++ 채끝 준비해드리겠습니다. 버터넛 퓨레와 주를 함께 구성했구요. 안에는 뒤셀을 채운 모렐과 샬롯 피클을 곁들였습니다. 고기와 버터넛 퓨레, 주를 같이 드셔보시고 모렐도 함께 곁들여 드셔보시면 좋습니다.']
+          description: ['한우 1++ 채끝 준비해드리겠습니다. 버터넛 퓌레와 주를 함께 구성했구요. 속에 뒥셀을 채운 모렐과 샬롯 피클을 곁들였습니다. 고기와 버터넛 퓌레, 주를 같이 드셔보시고 모렐도 함께 곁들여 드셔보시면 좋습니다.']
         }
       ]
     },
@@ -105,17 +111,64 @@
           name: 'ÎLE FLOTTANTE',
           image: '/assets/dining/09-ile-flottante.webp',
           guideImage: '/assets/dining/guides/09-ile-flottante-ingredients.webp',
-          description: ['바닐라 앙글레즈 위에 폭신하게 구운 머랭을 올리고, 얇은 캐러멜과 견과류 프랄린, 허브로 함께 마무리했습니다. 앙글레즈와 머랭, 캐러멜을 같이 드셔보시면 좋습니다.']
+          description: ['프랑스어로 떠있는 섬 이라는 디저트입니다.', '바닐라 앙글레즈 위에 폭신하게 구운 머랭을 올리고, 얇은 캐러멜과 견과류 프랄린, 허브로 함께 마무리했습니다. 앙글레즈와 머랭, 캐러멜을 같이 드셔보시면 좋습니다.']
+        }
+      ]
+    },
+    {
+      order: '06',
+      name: 'CHARCUTERIE & CHEESE',
+      items: [
+        {
+          id: 'dining-le-meunier-cheese-selection',
+          name: 'LE MEUNIER CHEESE SELECTION',
+          image: '/assets/dining/11-le-meunier-cheese-selection.webp',
+          guideImage: '/assets/dining/guides/11-le-meunier-cheese-selection-ingredients.webp',
+          description: [
+            '간단 버전)',
+            '르 므니에의 프리미엄 치즈 6종 셀렉션입니다.',
+            '프랑스의 치즈 숙성 전문가 르 므니에의 이름을 건 브랜드 치즈들로 구성했으며, 담백한 치즈부터 숙성의 깊은 풍미와 트러플 향이 돋보이는 치즈까지 다양하게 즐기실 수 있습니다.',
+            '각 치즈의 풍미가 다르니 순서대로 드셔보시는 걸 추천드리고, 가운데 체리도 함께 곁들여 즐겨보세요.',
+            '긴 버전)',
+            '르 므니에의 프리미엄 치즈 6종 셀렉션입니다.',
+            '프랑스의 치즈 숙성 전문가 르 므니에의 브랜드 치즈들로 구성했으며, 각 치즈의 원유와 숙성 방식에 따라 달라지는 풍미를 비교해 보실 수 있습니다.',
+            '(손으로 치즈를 가리키며)',
+            '먼저, 부드러운 조직감과 담백한 풍미를 지닌 똠므 뒤 쥐라입니다.',
+            '두 번째는 18개월 숙성을 거쳐 견과류를 연상시키는 고소함과 풍부한 향이 특징인 꽁떼입니다.',
+            '세 번째는 선명한 오렌지빛과 숙성에서 비롯된 깊은 풍미가 돋보이는 미몰레뜨입니다.',
+            '네 번째는 소·양·염소, 세 가지 원유가 어우러져 다채로운 맛과 향을 느낄 수 있는 피레네산맥의 전통 치즈, 똠 트루와 레입니다.',
+            '다섯 번째는 순하고 섬세한 풍미가 특징인 양유 치즈, 라 마로뜨입니다.',
+            '마지막은 숙성 치즈의 감칠맛에 검정 트러플의 향을 더한 레오나르도 알 타르투포입니다.',
+            '치즈마다 식감과 풍미가 다르니 순서대로 드셔보시는 걸 추천드립니다. 가운데 체리도 함께 곁들여 즐겨보세요.'
+          ]
         },
+        {
+          id: 'dining-charcuterie-sourdough',
+          name: 'CHARCUTERIE & SOURDOUGH',
+          image: '/assets/dining/12-charcuterie-sourdough.webp',
+          guideImage: '/assets/dining/guides/12-charcuterie-sourdough-ingredients.webp',
+          description: [
+            '샤퀴테리 6종 플래터 준비해 드렸습니다.',
+            '(손으로 샤퀴테리를 가리키며)',
+            '소고기를 염지·숙성한 브레사올라, 향신료 풍미가 특징인 파스트라미, 돼지고기 등심으로 만든 론지노, 부드러운 잠봉, 프랑스식 건조 소시송, 제노아 살라미 순서로 구성되어 있습니다.',
+            '함께 제공되는 사워도우와 트러플 버터를 곁들여 드시고, 가운데 코르니숑도 함께 즐겨보시면 좋습니다.'
+          ]
+        }
+      ]
+    },
+    {
+      order: '07',
+      name: 'SERVICE',
+      items: [
         {
           id: 'dining-euphoria-caviar-service',
           name: 'EUPHORIA CAVIAR SERVICE',
           image: '/assets/dining/08-euphoria-caviar-service.webp',
           guideImage: '/assets/dining/guides/08-euphoria-caviar-service-ingredients.webp',
           description: [
-            '캐비어 서비스 준비해드리겠습니다. (뚜껑 오픈)',
+            '캐비어 서비스 준비해드리겠습니다.',
             '오늘 준비해드린 캐비어는 프랑스산 오세트라 프레스티지 캐비어입니다. 은은한 바다의 향과 섬세한 헤이즐넛 풍미의 긴 여운을 느끼실 수 있고, 아름다운 호박색 골드 색을 띄고 있는 게 특징입니다.',
-            '따뜻하게 데운 메밀 블리니와 샤워크림(or 카이막 내일결정), 샬롯, 차이브, 달걀을 함께 준비했구요. 블리니에 샤워크림(or 카이막), 캐비어를 올려서 드셔도 좋고, 취향에 맞게 각각 곁들여 드셔도 좋습니다. 맛있게 드세요.'
+            '따뜻하게 데운 메밀 블리니와 사워크림(or 카이막 내일결정), 샬롯, 차이브, 달걀을 함께 준비했구요. 블리니에 사워크림(or 카이막), 캐비어를 올려서 드셔도 좋고, 취향에 맞게 각각 곁들여 드셔도 좋습니다. 맛있게 드세요.'
           ]
         }
       ]
@@ -200,7 +253,7 @@
     const custom = photos[item.id];
     const src = custom || item.image;
     const editorActions = canEditDining()
-      ? `<div class="recipe-actions dining-photo-actions"><button type="button" class="recipe-edit dining-edit-description" data-edit-dining="${item.id}">설명 수정</button><label class="recipe-photo-button">사진 변경<input type="file" accept="image/*" data-photo-section="${item.id}"></label>${custom ? `<button type="button" class="recipe-photo-reset" data-reset-photo="${item.id}">${item.image ? '기본 사진 복원' : '사진 삭제'}</button>` : ''}</div>`
+      ? `<div class="recipe-actions dining-photo-actions"><button type="button" class="recipe-edit dining-edit-description" data-edit-dining="${item.id}">설명 수정</button><label class="recipe-photo-button">대표 사진 수정<input type="file" accept="image/*" data-photo-section="${item.id}"></label>${custom ? `<button type="button" class="recipe-photo-reset" data-reset-photo="${item.id}">${item.image ? '기본 사진 복원' : '사진 삭제'}</button>` : ''}</div>`
       : '';
     const thumb = src
       ? `<img class="dining-thumb" src="${src}" alt="${item.name} 메뉴 사진" width="220" height="220" decoding="async" loading="lazy">`
@@ -324,7 +377,7 @@
     document.title = '다이닝 코스 · SPACE EUPHORIA';
     const breadcrumb = document.getElementById('breadcrumb');
     if (breadcrumb) breadcrumb.textContent = '다이닝';
-    main.innerHTML = `<div class="eyebrow">DINING COURSE</div><h1 class="page-heading">다이닝 코스</h1><p class="page-intro">코스 순서대로 확인하세요. 각 메뉴를 누르면 직원용 설명이 펼쳐집니다.</p><div class="dining-course-list">${diningCourses.map(course => `<section class="dining-course"><header><span>${course.order}</span><div><small>COURSE</small><h2>${course.name}</h2></div></header><div class="dining-items">${course.items.map(item => diningItem(item, photos)).join('')}</div></section>`).join('')}</div>`;
+    main.innerHTML = `<div class="eyebrow">DINING COURSE</div><h1 class="page-heading">다이닝 코스</h1><p class="page-intro">코스 순서대로 확인하세요. 각 메뉴를 누르면 직원용 설명이 펼쳐집니다. 설정에서 편집 모드를 켜면 모든 메뉴의 대표 사진과 설명을 수정할 수 있습니다.</p><div class="dining-course-list">${diningCourses.map(course => `<section class="dining-course"><header><span>${course.order}</span><div><small>COURSE</small><h2>${course.name}</h2></div></header><div class="dining-items">${course.items.map(item => diningItem(item, photos)).join('')}</div></section>`).join('')}</div>`;
     return true;
   };
 
