@@ -92,6 +92,24 @@
           image: '/assets/dining/06-signature-beef-steak.webp',
           guideImage: '/assets/dining/guides/06-signature-beef-steak-ingredients.webp',
           description: ['한우 1++ 채끝 준비해드리겠습니다. 버터넛 퓌레와 주를 함께 구성했구요. 속에 뒥셀을 채운 모렐과 샬롯 피클을 곁들였습니다. 고기와 버터넛 퓌레, 주를 같이 드셔보시고 모렐도 함께 곁들여 드셔보시면 좋습니다.']
+        },
+        {
+          id: 'dining-lobster-crustillant-au-caviar',
+          name: 'LOBSTER CRUSTILLANT AU CAVIAR',
+          image: '/assets/dining/13-lobster-crustillant-au-caviar.webp',
+          description: [
+            '랍스터 크루시티앙 준비해드리겠습니다.',
+            '바삭하게 구운 페이스트리 링 안에 컬리플라워 퓌레와 버터로 천천히 아로제한 랍스터를 올리고, 랍스터 껍질을 우려내 만든 비스크 크림소스를 곁들였습니다. 위에 올려드린 캐비어와 함께 구성 요소들을 다양하게 즐겨보시는 걸 추천드릴게요.'
+          ]
+        },
+        {
+          id: 'dining-beef-bourguignon',
+          name: 'BEEF BOURGUIGNON',
+          description: [
+            '오늘의 디쉬, 비프 부르기뇽입니다.',
+            '투쁠 등심을 레드와인과 채소를 넣어 천천히 브레이징해 부드럽게 익혔고, 당근과 샬롯, 양송이버섯, 마늘을 가니쉬로 곁들였습니다. 아래에는 매시드 포테이토를 깔고, 위에 허브 브레드크럼과 파슬리 찹을 올려 마무리했습니다.',
+            '고기와 가니쉬를 매시드 포테이토, 소스와 함께 곁들여 드시면 됩니다. 맛있게 드세요.'
+          ]
         }
       ]
     },
@@ -112,6 +130,15 @@
           image: '/assets/dining/09-ile-flottante.webp',
           guideImage: '/assets/dining/guides/09-ile-flottante-ingredients.webp',
           description: ['프랑스어로 떠있는 섬 이라는 디저트입니다.', '바닐라 앙글레즈 위에 폭신하게 구운 머랭을 올리고, 얇은 캐러멜과 견과류 프랄린, 허브로 함께 마무리했습니다. 앙글레즈와 머랭, 캐러멜을 같이 드셔보시면 좋습니다.']
+        },
+        {
+          id: 'dining-apple-tart',
+          name: 'APPLE TART',
+          description: [
+            '오늘의 디저트, 사과 타르트입니다.',
+            '겹겹이 쌓은 페이스트리 위에 제철 사과를 올려 따뜻하게 구운 타르트입니다.',
+            '위에 올려드린 럼 아이스크림이 충분히 녹은 후에 타르트와 같이 드시면 더 맛있습니다.'
+          ]
         }
       ]
     },
